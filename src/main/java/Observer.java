@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface Observer {
+public interface Observer {
+    WeatherStation weatherStation = new WeatherStation();
+    void update(int temperature);
 }
