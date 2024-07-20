@@ -4,7 +4,7 @@ public class DisplayPhone implements Observer{
     }
 
     @Override
-    public void update(int temperature) {
-        System.out.println("На телефоні температура: " + temperature);
+    public void update(double temperature) {
+        System.out.println("На телефоні температура: " + temperature + "°C");
     }
 }

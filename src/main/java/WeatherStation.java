@@ -3,12 +3,11 @@ import java.util.ArrayList;
 
 public class WeatherStation {
     private List<Observer> observerList = new ArrayList<>();
-    private int temperature;
+    private double temperature;
 
-    public int getTemperature() {return temperature;}
-
-    public void setTemperature(int temperature) {
+    public void setTemperature(double temperature) {
         this.temperature = temperature;
+        notifyAllObservers();
     }
     public void notifyAllObservers(){
         for(Observer eachObserver : observerList){

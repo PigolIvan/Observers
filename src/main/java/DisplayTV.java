@@ -3,7 +3,7 @@ public class DisplayTV implements Observer{
         this.weatherStation.addObserver(this);
     }
     @Override
-    public void update(int temperature) {
-        System.out.println("Температура на телевізорі: " + temperature);
+    public void update(double temperature) {
+        System.out.println("Температура на телевізорі: " + temperature + "°C");
     }
 }
